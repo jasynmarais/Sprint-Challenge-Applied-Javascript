@@ -42,7 +42,11 @@ An Event Listener is a function that the browser executes when an event occurs. 
 
 4. Why would we convert a NodeList into an Array?
 
+Converting a NodeList into an array allows us to gain access to the array prototype and all its methods.
+
 5. What is a component?
+
+A component is a function that creates a reusable portion of the document that can be re-used and can be isolated from your source code to be re-used on other projects.
 
 ### Git Set up
 
