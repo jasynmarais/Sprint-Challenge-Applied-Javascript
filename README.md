@@ -38,6 +38,8 @@ DOM Events are sent to notify code of interesting things that have taken place. 
 
 3. What is an event listener?
 
+An Event Listener is a function that the browser executes when an event occurs. The event listeners are just like event handlers, except that you can assign as many event listeners as you like to a particular event on particular element.
+
 4. Why would we convert a NodeList into an Array?
 
 5. What is a component?
