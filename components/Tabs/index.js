@@ -8,6 +8,18 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
+// Add GET request to API to display all topics
+axios.get('https://lambda-times-backend.herokuapp.com/topics')
+    .then(res => {
+        res.data.topics.forEach(topic => {
+            topicComponent(topic)
+        })
+    })
+    .catch(err => {
+        console.log(err);
+        
+    })
+
 function topicComponent(topic) {
     // Add element
     const tab = document.createElement('div');
