@@ -10,24 +10,31 @@
 // And add it to the DOM in the .headerContainer component
 
 function Header() {
+    // Add elements to header component
     const header = document.createElement('div');
-    header.classList.add('header');
-
     const date = document.createElement('span');
+    const title = document.createElement('h1');
+    const temperature = document.createElement('span');
+
+    // Add classes to header elements
+    header.classList.add('header');
     date.classList.add('date');
+    temperature.classList.add('temp');
+
+    // Add textContent
     date.textContent = 'MARCH 28, 2019';
+    title.textContent = 'Lambda Times';
+    temperature.textContent = '98°';
 
-    const h1 = document.createElement('h1');
-    h1.textContent = 'Lambda Times';
-
-    const temp = document.createElement('span');
-    temp.classList.add('temp');
-    temp.textContent = '98º';
-
+    // Append all elements to DOM
+    document.querySelector('.header-container').appendChild(header);
     header.appendChild(date);
-    header.appendChild(h1);
-    header.appendChild(temp);
+    header.appendChild(title);
+    header.appendChild(temperature);
 
+    // Return component
     return header;
 }
-document.querySelector('.header-container').appendChild(Header());
+
+    // Call header function
+    Header();
