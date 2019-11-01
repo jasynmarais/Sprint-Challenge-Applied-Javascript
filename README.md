@@ -30,23 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
-
+The Document Object Model, or the “DOM”, is an interface to web pages. It is essentially an API to the page, allowing programs to read and manipulate the page’s content, structure, and styles.
 
 2. What is an event?
 
-
+DOM Events are sent to notify code of interesting things that have taken place. Each event is represented by an object which is based on the Event interface, and may have additional custom fields and/or functions used to get additional information about what happened. Events can represent everything from basic user interactions to automated notifications of things happening in the rendering model.
 
 3. What is an event listener?
 
-
+An Event Listener is a function that the browser executes when an event occurs. The event listeners are just like event handlers, except that you can assign as many event listeners as you like to a particular event on particular element.
 
 4. Why would we convert a NodeList into an Array?
 
-
+Converting a NodeList into an array allows us to gain access to the array prototype and all its methods.
 
 5. What is a component?
 
-
+A component is a function that creates a reusable portion of the document that can be isolated from your source code to be re-used on other projects.
 
 ### Git Set up
 
@@ -78,3 +78,5 @@ Your stretch challenge is to write the functionality of a `Carousel` component. 
 * [ ] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
 
 * [ ] If you have finished the above, research `data attributes`. Implement data attributes within your tabs as well as your cards. Give the tabs functionality so that when they are clicked they filter the cards to only display the cards that contain that topic.
+
+Jasyn Marais - WEBEU4 - 1 November 2019
