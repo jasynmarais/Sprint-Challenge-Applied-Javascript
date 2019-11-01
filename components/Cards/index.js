@@ -51,3 +51,21 @@ function cardComponent(articleData) {
     return card;
 }
 
+// Make API call to display all card components to DOM
+axios.get('https://lambda-times-backend.herokuapp.com/articles')
+    .then(res => {
+        // Get access to articles object
+        const articlesObj = res.data.articles;
+        // Get access to articles array
+        const articlesArr = Object.values(articlesObj);
+
+        // Loop over each array and pass each key from each object through the card component function
+        articlesArr.forEach(article => {
+            for (let i = 0; i < article.length; i++) {
+                cardComponent(article[i]);
+            }
+        })
+    })
+    .catch(err => {
+        console.log(err);
+    })
