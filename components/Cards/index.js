@@ -46,4 +46,8 @@ function cardComponent(articleData) {
     authorContainer.appendChild(imgContainer);
     imgContainer.appendChild(img);
     authorContainer.appendChild(author);
+
+    // Return component
+    return card;
 }
+
