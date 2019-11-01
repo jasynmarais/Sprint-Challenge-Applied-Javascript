@@ -33,4 +33,9 @@ function cardComponent(articleData) {
     headline.classList.add('headline');
     authorContainer.classList.add('author');
     imgContainer.classList.add('img-container');
+
+    // Add content to elements
+    headline.textContent = articleData.headline;
+    img.src = articleData.authorPhoto;
+    author.textContent = `By: ${articleData.authorName}`;
 }
