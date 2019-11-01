@@ -8,3 +8,17 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
+function topicComponent(topic) {
+    // Add element
+    const tab = document.createElement('div');
+
+    // Add classes and textContent
+    tab.classList.add('tab');
+    tab.textContent = topic;
+
+    // Add to the DOM
+    document.querySelector('.topics').appendChild(tab);
+
+    // Return component
+    return tab;
+}
