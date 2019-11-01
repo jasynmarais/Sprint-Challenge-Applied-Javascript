@@ -27,4 +27,10 @@ function cardComponent(articleData) {
     const imgContainer = document.createElement('div');
     const img = document.createElement('img');
     const author = document.createElement('span');
+
+    // Add classes to elements
+    card.classList.add('card');
+    headline.classList.add('headline');
+    authorContainer.classList.add('author');
+    imgContainer.classList.add('img-container');
 }
