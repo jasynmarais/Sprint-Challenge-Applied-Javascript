@@ -18,3 +18,13 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
+// Create a card component maker function
+function cardComponent(articleData) {
+    // Add all elements
+    const card = document.createElement('div');
+    const headline = document.createElement('div');
+    const authorContainer = document.createElement('div');
+    const imgContainer = document.createElement('div');
+    const img = document.createElement('img');
+    const author = document.createElement('span');
+}
